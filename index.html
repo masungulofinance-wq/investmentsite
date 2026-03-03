@@ -111,9 +111,24 @@ footer {
         <li>Transparent investment structure</li>
     </ul>
 
-    <button onclick="alert('Thank you for your interest! Please contact us at info@masungulocctv.co.za')">
-        Become an Investor
-    </button>
+  <button onclick="showForm()">
+    Become an Investor
+</button>
+
+<div id="jotformContainer" style="display:none; margin-top:40px;">
+    <script type="text/javascript" src="https://form.jotform.com/jsform/260613506018045"></script>
+</div>
+
+<script>
+function showForm() {
+    var form = document.getElementById("jotformContainer");
+    if (form.style.display === "none") {
+        form.style.display = "block";
+    } else {
+        form.style.display = "none";
+    }
+}
+</script>
 </section>
 
 <footer>
@@ -121,4 +136,5 @@ footer {
 </footer>
 
 </body>
+
 </html>
